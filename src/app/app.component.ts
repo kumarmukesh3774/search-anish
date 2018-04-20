@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  public category : String;
+  public query : String;
+  
+  setCategoryAndQuery(event) : void {
+    this.category = event.category;
+    this.query = event.query;
+    alert(this.category+":"+this.query);
+  }
+  
 }
